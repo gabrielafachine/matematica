@@ -17,9 +17,14 @@ public class Api {
        Conjunto<String> a = new Conjunto<>();
        a.elementos.add("a");
        a.elementos.add("b");
-       if(a.pertinecia("c"))
-           System.out.print("certo");
-        else
-            System.out.print("errado");
+       Conjunto<String> b = new Conjunto<>();
+       b.elementos.add("a");
+       b.elementos.add("b");
+       b.elementos.add("c");
+       b.elementos.add("d");
+       Conjunto<String> c = b.subtracao(a);
+        for (String t : c.elementos) {
+            System.out.println(t);    
+        }
     }
 }
