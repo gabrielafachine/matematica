@@ -22,9 +22,12 @@ public class Api {
        b.elementos.add("b");
        b.elementos.add("c");
        b.elementos.add("d");
-       Conjunto<String> c = b.subtracao(a);
-        for (String t : c.elementos) {
-            System.out.println(t);    
+       
+      // Conjunto<String> c = b.subtracao(a);
+       Conjunto<Tuple> c = a.produto(b);
+        for (Tuple t : c.elementos) {
+            System.out.println(t.a.toString());
+             System.out.println(t.b.toString()+"\n");    
         }
     }
 }
